@@ -19,21 +19,8 @@ function Square(props) {
       />
       );
     }
-    drawBoard() {
-      let allSquares = [];
-      for(let j = 0; j < 9; j ++) { 
-          allSquares.push(this.renderSquare(j));
-      } 
-      return allSquares;
-    }
     render() {
       return (
-      /*
-        {for(let i = 0; i < 3; i ++)}
-        <div className="board-row">
-          {this.drawBoard()}
-        </div>        
-        */
         <div>
           <div className="board-row">
             {this.renderSquare(0)}
